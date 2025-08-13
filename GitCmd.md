@@ -141,3 +141,22 @@ git status
 - Which files are changed but not staged (red).
 
 - Which branch you’re on.
+
+> In case author identity unknown
+
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+> Short hand git CLI cmds to merge changes
+
+```bash
+git init         #initialize git
+git status     l#know status
+ls                #list files and folders
+git add . | get add <filename> | git add <foldername>
+git commit -m "comment changes"
+git push -u origin main
+git push
+git status
+```

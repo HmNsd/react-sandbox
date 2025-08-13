@@ -159,4 +159,6 @@ git commit -m "comment changes"
 git push -u origin main
 git push
 git status
+git log                   #view all logs for all commits
+git log --oneline.  #view commit details In-Scohort
 ```

@@ -84,3 +84,60 @@ git commit -m "message"
 git pull
 git push
 ```
+
+
+### To push changes in Git (from VS Code or terminal), the steps are always: stage → commit → push.
+
+1. Stage the changes
+   
+**All files:**
+
+```bash
+git add . #add all files
+```
+**Specific file(s):**
+
+```bash
+git add file1.js file2.css #specific file
+```
+**Specific folder:**
+
+```bash
+git add foldername/
+```
+2. Commit the changes
+```bash
+git commit -m "Describe your changes here"
+```
+3. Push to remote:
+
+- If it’s the first push to a branch:
+
+```bash
+git push -u origin branch-name
+```
+
+- Example:
+
+```bash
+git push -u origin main
+```
+
+- For later pushes (same branch):
+
+```bash
+git push
+```
+
+**💡 Check before pushing**
+
+```bash
+git status
+```
+
+**Shows:**
+- Which files are staged (green).
+
+- Which files are changed but not staged (red).
+
+- Which branch you’re on.

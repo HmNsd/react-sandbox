@@ -148,7 +148,7 @@ git status
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
-> Short hand git CLI cmds to merge changes
+> NOTE: Short hand git CLI cmds to merge changes
 
 ```bash
 git init         #initialize git
@@ -161,4 +161,24 @@ git push
 git status
 git log                   #view all logs for all commits
 git log --oneline.  #view commit details In-Scohort
+```
+
+
+### HEAD in git
+The HEAD is a pointer to the current branch that you are working on. It points to the latest commit in the current branch. When you create a new branch, it is automatically set as the HEAD of that branch.
+
+- the default branch used to be master, but it is now called main. There is nothing special about main, it is just a convention.
+
+**Creating a new branch**
+
+To create a new branch, you can use the following command:
+
+```bash
+git branch    #know present branch pointing HEAD
+git branch <branchname>
+git switch <branchname>
+git log
+git switch main #here main is parent branch
+git switch -c dark-mode
+git checkout orange-mode
 ```

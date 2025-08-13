@@ -292,3 +292,24 @@ Example .babelrc:
 - Prefer @babel/preset-env with targets or browserslist so only necessary polyfills/transforms are applied.
 
 - For polyfills, use core-js + useBuiltIns options or rely on tools like polyfill.io / browserslist.
+
+
+>  Note:
+> - Function and Component naming convention should be in Upper camel casing. Ex: Cart.jsx
+>  - Extension should be in jsx recommended as its a component and if its exporting or component returned.
+> Component means HTML used in jsx.
+
+--- 
+---
+
+> FYI
+
+#### Here's a breakdown of common casing types: 
+
+- camelCase: The first letter of the first word is lowercase, and the first letter of each subsequent word is uppercase. Example: myVariableName.
+- PascalCase: Also known as UpperCamelCase, the first letter of each word is uppercase. Example: MyClassName.
+- snake_case: Words are separated by underscores, and all letters are typically lowercase. Example: my_variable_name.
+- kebab-case: Words are separated by hyphens, and all letters are typically lowercase. Example: my-variable-name.
+- UPPER_CASE: All letters are uppercase. Example: MY_CONSTANT.
+- lowercase: All letters are lowercase. Example: myvariable.
+--- 

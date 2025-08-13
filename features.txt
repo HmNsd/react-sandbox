@@ -3,3 +3,4 @@ This file list down all the features in hash
 #feature/user-authentication
 #feature/payment-integration
 #feature/profile-page-ui
+#feature/Homepage-footer

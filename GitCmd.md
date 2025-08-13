@@ -179,6 +179,6 @@ git branch <branchname>
 git switch <branchname>
 git log
 git switch main #here main is parent branch
-git switch -c dark-mode
-git checkout orange-mode
+git switch -c <dark>  #dark: branch created and switched head
+git checkout <orange-mode>  #checks branch "orange-mode" exist or not
 ```

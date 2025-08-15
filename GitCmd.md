@@ -156,7 +156,7 @@ git status     l#know status
 ls                #list files and folders
 git add . | get add <filename> | git add <foldername>
 git commit -m "comment changes"
-git push -u origin main
+git push -u origin <branchname>
 git push
 git status
 git log                   #view all logs for all commits

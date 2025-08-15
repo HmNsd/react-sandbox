@@ -610,3 +610,5 @@ git reset --hard <commit-hash>
 git reflog <commit-hash>
 git reset --hard HEAD@{1}
 ```
+
+Good bye 👋

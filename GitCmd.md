@@ -180,5 +180,66 @@ git switch <branchname>
 git log
 git switch main #here main is parent branch
 git switch -c <dark>  #dark: branch created and switched head
-git checkout <orange-mode>  #checks branch "orange-mode" exist or not
+git checkout <orange-mode>  #checks branch "orange-mode" exist or not. If exist then switch head
 ```
+
+### Merging branches
+- Merging is about bringing changes from one branch to another.
+- In Git we have two types of merges :
+    - Fast-Forward Merges (If branches have not diverged)
+    - 3-Way Merges (if branches have diverged)
+
+**Fast-forward merge**
+
+This one is easy as branch that you are trying to merge is usually ahead and there are no conflicts.
+
+When you are done working on a branch, you can merge it back into the main branch. This is done using the following command:
+
+```bash
+
+git checkout main       #This command switches to the main branch.
+git merge bug-fix       #This command merges the bug-fix branch into the main branch.
+```
+> - If the command are same, what is the difference between fast-forward and not fast-forward merge?
+> - The difference is resolving the conflicts. In a fast-forward merge, there are no conflicts. But in a not fast-forward merge, there are conflicts, and there are no shortcuts to resolve them. You have to manually resolve the conflicts. Decide, what to keep and what to discard. VSCode has a built-in merge tool that can help you resolve the conflicts.
+
+**Abort merge**
+
+```bash
+git merge --abort
+```
+
+### Managing conflicts
+
+- There is no magic button to resolve conflicts. You have to manually resolve the conflicts. Decide, what to keep and what to discard. VSCode has a built-in merge tool that can help you resolve the conflicts. I personally use VSCode merge tool. Github also has a merge tool that can help you resolve the conflicts but most of the time I handle them in VSCode and it gives me all the options to resolve the conflicts.
+
+> Overall it sounds scary to beginners but it is not, it’s all about communication and understanding the code situation with your team members.
+
+**Rename a branch**
+
+```bash
+git branch -m <old-branch-name> <new-branch-name>
+```
+
+**Delete a branch**
+
+```bash
+git branch -d <branch-name>
+```
+
+**Checkout a branch**
+- You can checkout a branch using the following command:
+
+
+```bash
+git checkout <branch-name>
+```
+
+**List all branches**
+- List all branches means that you are going to see all the branches in your repository.
+
+```bash
+git checkout <branch-name>
+``` 
+
+> **NOTE**: Once conflict resolved then "add" and "commit" required to proceed further.

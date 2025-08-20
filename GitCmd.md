@@ -289,7 +289,7 @@ git config --global user.name "Your Name"
 
 ```bash
 git init         #initialize git
-git status     l#know status
+git status     # to know status
 ls                #list files and folders
 git add . | get add <filename> | git add <foldername>
 git commit -m "comment changes"

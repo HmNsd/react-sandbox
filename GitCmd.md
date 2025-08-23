@@ -610,5 +610,79 @@ git reset --hard <commit-hash>
 git reflog <commit-hash>
 git reset --hard HEAD@{1}
 ```
+================================================
+
+Got it 👍 — if you want to check where a Git project is deployed from, there are a few useful Git commands:
+
+1. See the Remote Repository (GitHub/GitLab/Bitbucket/etc.)
+
+```bash
+git remote -v
+```
+
+
+✅ This shows the remote repository URL your project is linked to.
+Example output:
+
+```perl
+origin  https://github.com/username/project.git (fetch)
+origin  https://github.com/username/project.git (push)
+```
+
+2. Check the Current Branch
+```bash
+git branch --show-current
+```
+or
+```bash
+git status
+```
+
+✅ Tells you which branch (e.g., main, master, develop) is currently active — usually the one deployed.
+
+> ⭐️  3. Check Remote Branch Tracking
+
+```bash
+git remote show origin
+```
+
+✅ Shows which remote branch your local branch is tracking and whether it’s up to date.
+Example:
+
+```less
+* remote origin
+  Fetch URL: https://github.com/username/project.git
+  Push  URL: https://github.com/username/project.git
+  HEAD branch: main
+  Remote branches:
+    main tracked
+```
+
+4. Check Deployment (If Using Services Like Vercel/Netlify/Heroku)
+
+Git itself doesn’t know where code is deployed, only where it’s stored.
+
+- For Vercel → run `vercel` CLI inside the project (if configured).
+
+- For Netlify → check `netlify.toml` or `netlify status`.
+
+- For Heroku → run:
+```bash
+git remote -v
+```
+
+You’ll often see something like:
+```perl
+heroku  https://git.heroku.com/app-name.git (fetch)
+heroku  https://git.heroku.com/app-name.git (push)
+```
+
+✅ In short:
+
+`git remote -v` → find Git repo URL
+
+`git branch` or `git remote show origin` → see branch tracking
+
+Deployment service (Heroku, Vercel, Netlify, AWS, etc.) decides where it’s actually deployed
 
 Good bye 👋
